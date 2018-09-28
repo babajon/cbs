@@ -1,0 +1,8 @@
+{
+  "application": "",
+  "boundedContext": "809500f9-8795-f940-9cf9-c796e96fc2d3",
+  "boundedContextName": "NotificationGateway",
+  "backend": {
+    "language": "csharp"
+  }
+}
