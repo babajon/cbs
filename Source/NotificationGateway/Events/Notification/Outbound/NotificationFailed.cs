@@ -1,7 +1,7 @@
-using Dolittle.Events;
 using System;
+using Dolittle.Events;
 
-namespace Events.Notifcation.Outbound
+namespace Events.Notification.Outbound
 {
     public class NotificationFailed : IEvent
     {

@@ -1,11 +1,12 @@
-using Dolittle.Events;
 using System;
+using Concepts;
+using Dolittle.Events;
 
-namespace Events.Notifcation.Inbound
+namespace Events.Notification.Inbound
 {
     public class NotificationReceived : IEvent
     {
-        public NotificationReceived(Guid notificationId, string endpointType, string address, DateTime timeStamp)
+        public NotificationReceived(Guid notificationId, NotifcationEndpointType endpointType, string address, DateTime timeStamp)
         {
             TimeStamp = timeStamp;
             EndpointType = endpointType;
@@ -14,7 +15,7 @@ namespace Events.Notifcation.Inbound
        }
 
         public DateTime TimeStamp {get; }
-        public string EndpointType {get;}
+        public NotifcationEndpointType EndpointType {get;}
         public string Address{get;}
         public Guid NotificationId{get;}
     }
