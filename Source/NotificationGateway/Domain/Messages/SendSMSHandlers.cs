@@ -10,8 +10,8 @@ namespace Domain.Messages{
         public void Handle(SendSMS command){
             var sender = _smsSenderRepository.Get(default(Guid));
             var message = new SendMessage();
-            
-            sender.send(new SendMessage("","",""));
+
+            // sender.send(new SendMessage("","",""));
         }
     }
 }
